@@ -1,4 +1,4 @@
--- Quick test: a glowing, spinning cube floating above the spawn.
+-- Quick test: a glowing blue, spinning cube floating above the spawn.
 local RunService = game:GetService("RunService")
 
 local cube = Instance.new("Part")
@@ -15,5 +15,4 @@ local t = 0
 RunService.Heartbeat:Connect(function(dt)
 	t += dt
 	cube.CFrame = CFrame.new(base + Vector3.new(0, math.sin(t * 2), 0)) * CFrame.Angles(t, t * 1.5, 0)
-	cube.Color = Color3.fromHSV((t * 0.1) % 1, 1, 1)
 end)
