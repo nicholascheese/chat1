@@ -43,8 +43,8 @@ src/
 3. In this folder run `rojo serve`, then click **Connect** in the Rojo plugin.
 4. Press **Play**.
 
-Or build a place file directly with `rojo build -o FPS.rbxlx` and open it in Studio. It contains
-only the scripts, so add a Baseplate and SpawnLocation to have somewhere to deploy to.
+Or build a ready-to-play place file (scripts plus a baseplate, spawn point and Future lighting) with
+`rojo build place.project.json -o FPS.rbxlx`, then open `FPS.rbxlx` in Studio.
 
 ### Option B: copy the scripts by hand
 
